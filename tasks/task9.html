@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<h3 class="title">Задача 9.</h3>
+	
+	<p class="paragraf">Користувач загадує число. Комп’ютер задає питання поки не вгадає число користувача (використати confirm).
+	</p>
+	<script>
+		const min = 1, max = 9 
+            let count = 1
+            const userNumber = parseInt(prompt("Загадайте число від 1 до 9","1"))
+            
+
+            for (let i = 1; ; i++) {
+               const randomNamber = min + Math.floor(Math.random() * (max - min + 1))
+               if ( confirm (`${i} спроба: це число ${randomNamber}?`)){
+               document.write(`Я вгадав число за ${count} спроб, воно дорівнює ${randomNamber}`)
+               break}
+               count++
+               }
+
+	</script>
+</body>
+</html>

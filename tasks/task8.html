@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<h3 class="title">Задача 8.</h3>
+	
+	<p class="paragraf">
+		Користувач загадує число. За 3 спроби комп’ютер намагається вгадати число користувача (використати confirm).</p>
+		
+	<script>
+		 const userNumber = parseInt(prompt("Загадайте число від 1 до 10"))
+          for (let i = 1; i <= 3; i++) {
+            const randomNumber = 1 + Math.floor(Math.random() * 10)
+            let gues = confirm(`Спроба ${i}, Ваше число ${randomNumber}?`)
+            if (gues) {
+              document.write("<p>Комп'ютер вгадав Ваше число!!!</p>")
+              break
+            }
+            if (i === 3) alert("Нажаль, комп'ютер не справився з завданням")
+          }
+	</script>
+</body>
+</html>

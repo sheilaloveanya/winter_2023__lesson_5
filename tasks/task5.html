@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	
+	<h3 class="title">Задача 5.</h3>
+	
+	<p class="paragraf">
+		Вивести таблицю.
+	</p>
+		
+	<script>
+		
+		const lineNumber = 3
+      const columnNumber = 3
+
+   	document.write(`
+            <table border="4px;"">
+               <tbody>`)
+            let counter = 1 
+            for (let l = 1; l <= lineNumber; l++) {
+               document.write(`<tr>`)
+               for (let c = 1; c <= columnNumber; c++, counter++) {  
+               document.write(`<td>${counter}</td>`)
+            }
+            document.write(`</tr>`)
+            }
+         document.write(`
+               </tbody>
+            </table> `)
+
+	</script>
+
+	
+</body>
+</html>

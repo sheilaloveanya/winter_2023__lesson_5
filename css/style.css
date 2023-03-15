@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@700&display=swap');
+
+body {
+	font-family:"Cormorant Infant" ;
+	font-size: 30px;
+	font-weight: 700;
+	font-style: normal;
+	background-image: url('../img/bg.jpg');	
+}
+
+a {
+	color: maroon;
+	width: 250px;
+   height: 50px;
+   background-color: rgba(197, 155, 47, 0.689);
+  	border-radius: 20px;
+	border: solid 4px maroon ;
+	padding: 10px;
+	display: inline-block
+	
+}
+	
+.title {
+	color: maroon;
+	width: 150px;
+   height: 50px;
+   background-color: rgba(197, 155, 47, 0.689);
+  	border-radius: 20px;
+	border: solid 4px maroon ;
+	padding: 15px;
+	
+	
+}
+
+.paragraf {
+	width: 850px;
+   height: 200px;
+   background-color:rgba(197, 155, 47, 0.689) ;
+  	border-radius: 30px;
+	
+	padding: 50px ;
+	border: solid 4px maroon ;
+
+
+}

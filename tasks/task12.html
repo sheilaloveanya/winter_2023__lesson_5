@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<h3 class="title">Задача 12.</h3>
+
+	<p class="paragraf"> Ігровий автомат. Випадково вибираємо зображення у 3 позиціях. Вибір у кожній позиції вибирається як одне з чотирьох зображень. Вивести ці зображення і повідомити виграш користувача (три перших зображення 100 грн, три других – 200, три третіх – 500, три четвертих зображення – 1000грн). Використати цикли і switch (для вибору зображення за номером).</p>
+
+	<script>
+let numberAttempt = ""
+let result
+let randomImage
+
+	for (let i = 0; i < 3; i++){
+		randomImage = 1 + Math.floor(Math.random()*4)
+switch (randomImage) {
+
+	case 1:
+	numberAttempt  += `1`
+document.write(`<img width="200" src="../img/cake.png" alt="cake">`)
+	break;
+
+case 2:
+numberAttempt  += `2`
+document.write(`<img width="200" src="../img/cheeseburger.png" alt="cheeseburger">`)
+break;
+
+case 3:
+numberAttempt  += `3`
+document.write(`<img width="200" src="../img/ice_cream.png" alt="ice_cream">`)
+break;
+
+case 4:
+numberAttempt  += `4`
+document.write(`<img width="200" src="../img/pizza.png" alt="pizza">`)
+break;
+}
+
+}
+switch (numberAttempt) {
+	case "111":
+		result = "Ваш виграш 100 грн"
+	break;
+	case "222":
+		result = "Ваш виграш 200 грн"
+	break;
+	case "333":
+		result = "Ваш виграш 500 грн"
+	break;
+	case "444":
+		result = "Ваш виграш 1000 грн"
+	break;
+	default:
+		result = "Спробуйте ще"
+		break;
+}
+document.write(`<br><br>${result}`)
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Document</title>
+</head>
+<body style="font-size: 22px;">
+	<h3 class="title">Задача 6.</h3>
+	
+	<p class="paragraf">
+		Вивести 3 таблиці (по 3 рядки і 3 стовпці у кожній).
+	</p>
+		
+	<script>
+		 
+		 const firstTable = 3
+      	const secondTable = 3
+         const threeTable = 3
+         let counter = 1
+
+            for (let f = 1; f <= firstTable ; f++){
+            document.write(`
+            <table border="4px;"">
+               <tbody><br>`) 
+            for (let s = 1; s <= secondTable; s++) {
+               document.write(`<tr>`)
+               for (let t = 1; t <= threeTable; t++, counter++) {  
+               document.write(`<td>${counter}</td>`)
+            }
+            document.write(`</tr>`)
+            }
+
+            document.write(`
+               </tbody>
+            </table> `)
+         }
+	</script>
+</body>
+</html>
